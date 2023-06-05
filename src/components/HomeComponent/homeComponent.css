@@ -1,0 +1,168 @@
+.home__component__right {
+  height: 100%;
+  width: 75%;
+}
+
+.home__component__right__top {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.sub__home__right__top_revenue,
+.sub__home__right__top_transaction,
+.sub__home__right__top_likes,
+.sub__home__right__top_user {
+  width: 235.05px;
+  height: 120px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.sub__home__right__top_revenue {
+  background-color: #ddefe0;
+}
+
+.sub__home__right__top_transaction {
+  background-color: #f4eccd;
+}
+
+.sub__home__right__top_likes {
+  background-color: #efdada;
+}
+
+.sub__home__right__top_user {
+  background-color: #dee0ef;
+}
+
+.sub__home__right__top_div_right {
+  width: 67%;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.sub__home__right__top_div_right p:nth-child(1) {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+}
+
+.sub__home__right__top_div_right p:nth-child(2) {
+  font-size: 24px;
+  line-height: 32.8px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.sub__home__right__top_div_left {
+  position: absolute;
+  right: 18px;
+  top: 10px;
+}
+
+.sub__home__right_icon {
+  font-size: 27px;
+}
+
+.home__component__right__line-chart {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+
+.home__component__right__line-chart_top__div {
+  display: flex;
+  height: auto;
+  /* justify-content: space-between; */
+}
+
+.home__component__right__line-chart_top__div .left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* border: 1px solid red; */
+}
+
+.home__component__right__line-chart_top__div .right {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.home__component__right__line-chart_top__div .left span {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.home__component__right__line-chart_top__div .left select {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 3px;
+  margin-left: 25px;
+  width: 18%;
+  border: none;
+  outline: none;
+}
+
+.guest,
+.user {
+  width: 35%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guest_col {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e9a0a0;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.user_col {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #9bdd7c;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.chart {
+  margin-top: 20px;
+}
+
+.home__component__right__pie-chart-schedule {
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__component__right__line-chart-schedule_pie-chart {
+  width: 48%;
+  height: 256px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.home__component__right__line-chart-schedule_schedule {
+  width: 48%;
+  height: 256px;
+  background-color: #fff;
+  border-radius: 20px;
+}
