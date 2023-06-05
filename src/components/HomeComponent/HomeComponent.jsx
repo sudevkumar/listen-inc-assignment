@@ -83,9 +83,13 @@ function HomeComponent() {
 
   const pieData = [
     { name: "Group A", value: 400 },
-    { name: "Group B", value: 300 },
-    { name: "Group C", value: 300 },
+    { name: "Group B", value: 350 },
+    { name: "Group C", value: 250 },
   ];
+
+  console.log(typeof pieData[0].value);
+
+  //   const value1 = pieData[0].value + pieData[1].value + pieData[2].value;
 
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
 
@@ -191,7 +195,35 @@ function HomeComponent() {
               </PieChart>
             </ResponsiveContainer>
 
-            <div className="left_pie"></div>
+            <div className="left_pie">
+              <div className="basic_tees">
+                <div className="upper">
+                  <div className="color green"></div>
+                  <span>Basic Tees</span>
+                </div>
+                <div className="lower">
+                  <span>{(pieData[0]?.value / 1000) * 100} %</span>
+                </div>
+              </div>
+              <div className="custom_short_plants">
+                <div className="upper1">
+                  <div className="color red"></div>
+                  <span>Custom Short Plants</span>
+                </div>
+                <div className="lower">
+                  <span>{(pieData[1]?.value / 1000) * 100} %</span>
+                </div>
+              </div>
+              <div className="super_hoodies">
+                <div className="upper2">
+                  <div className="color yellow"></div>
+                  <span>Supper Hoodies</span>
+                </div>
+                <div className="lower">
+                  <span>{(pieData[2]?.value / 1000) * 100} %</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
