@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import HomeComponent from "../../components/HomeComponent/HomeComponent";
-import SideBar from "../../components/SideBar/SideBar";
-import "./home.css";
+import HomeComponent from "../HomeComponent/HomeComponent";
+import SideBar from "../SideBar/SideBar";
 
-function Home() {
+function Dashboard() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
@@ -24,4 +23,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Dashboard;

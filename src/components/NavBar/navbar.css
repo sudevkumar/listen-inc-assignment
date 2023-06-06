@@ -59,4 +59,28 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
+
+.log_out {
+  position: absolute;
+  right: 30px;
+  z-index: 999;
+  margin-top: 5px;
+  width: 7%;
+}
+
+.log_out button {
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* Responsivenes for Tablet */
+
+

@@ -1,12 +1,11 @@
 import React from "react";
 import Navbar from "../NavBar/Navbar";
 import "./homeComponent.css";
-import { BsTags } from "react-icons/bs";
+import { BsChevronRight, BsTags } from "react-icons/bs";
 import { AiOutlineLike } from "react-icons/ai";
 import { RiMoneyCnyBoxLine } from "react-icons/ri";
 import { TbUsers } from "react-icons/tb";
 import {
-  CartesianAxis,
   CartesianGrid,
   Cell,
   Line,
@@ -19,7 +18,7 @@ import {
   YAxis,
 } from "recharts";
 
-function HomeComponent() {
+function HomeComponent({ handleClick, click, setClick }) {
   const allData = [
     {
       name: "Total Revenue",
@@ -48,7 +47,7 @@ function HomeComponent() {
   ];
 
   const chartData = [
-    { name: "Week1", guest: 342, user: 317 },
+    { name: "", guest: 342, user: 317 },
     { name: "Week2", guest: 232, user: 487 },
     { name: "Week3", guest: 153, user: 247 },
     { name: "Week4", guest: 491, user: 127 },
@@ -93,9 +92,11 @@ function HomeComponent() {
 
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
 
+  const mobile = window.innerWidth <= 768 ? true : false;
+
   return (
     <div className="home__component__right">
-      <Navbar />
+      <Navbar handleClick={handleClick} click={click} setClick={setClick} />
       <div className="home__component__right__top">
         {allData?.map((data) => (
           <div
@@ -138,25 +139,41 @@ function HomeComponent() {
         </div>
 
         <div className="chart">
-          <LineChart width={1048} height={300} data={chartData}>
-            <Line
-              type="monotone"
-              dataKey={"guest"}
-              stroke="#e9a0a0"
-              strokeWidth={2}
-            />
-            <Line
-              type="monotone"
-              dataKey={"user"}
-              stroke="#9BDD7C"
-              strokeWidth={2}
-            />
-            <CartesianGrid stroke="#ccc" />
-            {/* <CartesianAxis stroke="#ccc" /> */}
-            <XAxis dataKey={"name"} />
-            <YAxis />
-            <Tooltip />
-          </LineChart>
+          <ResponsiveContainer
+            width={
+              window.innerWidth <= 1156
+                ? "100%"
+                : window.innerWidth <= 768
+                ? "90%"
+                : "50%"
+            }
+            height={300}
+          >
+            <LineChart
+              width={10}
+              height={300}
+              data={chartData}
+              className="line__chart"
+            >
+              <Line
+                type="monotone"
+                dataKey={"guest"}
+                stroke="#e9a0a0"
+                strokeWidth={2}
+              />
+              <Line
+                type="monotone"
+                dataKey={"user"}
+                stroke="#9BDD7C"
+                strokeWidth={2}
+              />
+              <CartesianGrid stroke="#ccc" />
+              {/* <CartesianAxis stroke="#ccc" /> */}
+              <XAxis dataKey={"name"} />
+              <YAxis />
+              <Tooltip />
+            </LineChart>
+          </ResponsiveContainer>
         </div>
       </div>
 
@@ -227,7 +244,29 @@ function HomeComponent() {
           </div>
         </div>
 
-        <div className="home__component__right__line-chart-schedule_schedule"></div>
+        <div className="home__component__right__line-chart-schedule_schedule">
+          <div className="home__component__right__line-chart-schedule_schedule_top">
+            <span>Today's schedule</span>
+            <div className="home__component__right__line-chart-schedule_schedule_top_right">
+              See All
+              <BsChevronRight className="schedule_icon" />
+            </div>
+          </div>
+
+          <div className="home__component__right__line-chart-schedule_schedule_btm">
+            <div className="home__component__right__line-chart-schedule_schedule_btm_sec greens">
+              <span>Meeting with suppliers from Kuta Bali</span>
+              <span>14.00-15.00</span>
+              <span>at Sunset road, Kuta Bali</span>
+            </div>
+
+            <div className="home__component__right__line-chart-schedule_schedule_btm_sec violets">
+              <span>Meeting with suppliers from Kuta Bali</span>
+              <span>14.00-15.00</span>
+              <span>at Sunset road, Kuta Bali</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

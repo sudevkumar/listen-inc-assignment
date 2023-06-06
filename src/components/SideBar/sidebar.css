@@ -9,6 +9,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.hamberger {
+  display: none;
+}
 
 .sub__home__left__top {
   height: 70%;
@@ -87,4 +90,74 @@
 
 .mar {
   margin-top: 40px;
+}
+
+.none {
+  display: none;
+}
+
+.display {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1156px) {
+  .sub__home__left {
+    display: none;
+  }
+
+  .hamberger {
+    display: block;
+    margin-top: 15px;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .hamberger img {
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .hamberger_menu {
+    height: auto;
+    border-radius: 10px;
+    width: 25%;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+    z-index: 999;
+  }
+  .ham {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sub__home__left {
+    display: none;
+  }
+
+  .hamberger {
+    display: block;
+    margin-top: 15px;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .hamberger img {
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .hamberger_menu {
+    height: auto;
+    border-radius: 10px;
+    width: 75%;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+    z-index: 999;
+  }
+  .ham {
+    margin-left: 10px;
+  }
 }
