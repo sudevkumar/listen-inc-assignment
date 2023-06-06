@@ -22,19 +22,19 @@ function HomeComponent({ handleClick, click, setClick }) {
   const allData = [
     {
       name: "Total Revenue",
-      amount: "$2, 129, 430",
+      amount: "$2,129,430",
       icon: <RiMoneyCnyBoxLine />,
       class: "revenue",
     },
     {
       name: "Total Transaction",
-      amount: "$1, 520",
+      amount: "$1,520",
       icon: <BsTags />,
       class: "transaction",
     },
     {
       name: "Total Likes",
-      amount: "9, 721",
+      amount: "9,721",
       icon: <AiOutlineLike />,
       class: "likes",
     },
@@ -141,10 +141,10 @@ function HomeComponent({ handleClick, click, setClick }) {
         <div className="chart">
           <ResponsiveContainer
             width={
-              window.innerWidth <= 1156
-                ? "100%"
+              window.innerWidth >= 1156
+                ? "98%"
                 : window.innerWidth <= 768
-                ? "90%"
+                ? "96%"
                 : "50%"
             }
             height={300}

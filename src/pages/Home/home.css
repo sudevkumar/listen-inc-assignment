@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 321px) {
   .home {
-    height: 355vh;
+    height: 360vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
   }
 
   .sub__home {
-    height: 340vh;
+    height: 345vh;
     width: 95%;
     display: flex;
     justify-content: space-between;

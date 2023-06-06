@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineBell, AiOutlineSearch } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import "./navbar.css";
@@ -6,13 +6,11 @@ import "./navbar.css";
 function Navbar({ handleClick, click, setClick }) {
   const navigate = useNavigate();
   const lisetdUser = JSON.parse(localStorage.getItem("list-user"));
-  
-
 
   const handleLogOut = () => {
     localStorage.removeItem("list-user");
-    navigate("/signup");
     alert("Logout Successful");
+    navigate("/signup");
     setClick(false);
   };
 

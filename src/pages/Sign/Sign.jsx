@@ -31,8 +31,8 @@ const Sign = () => {
 
   // Check whether the user is sign in via google or not
   if (loginUser.name !== undefined) {
-    alert("Welcome to Listed Inc.");
     navigate("/");
+    alert("Welcome to Listed Inc.");
   }
 
   return (

@@ -407,7 +407,7 @@
 @media screen and (max-width: 768px) {
   .home__component__right__line-chart {
     height: auto;
-    width: 690px;
+    width: 680px;
     background-color: #fff;
     margin-top: 25px;
     border-radius: 20px;
@@ -417,7 +417,7 @@
 @media screen and (max-width: 320px) {
   .home__component__right {
     height: 100%;
-    width: 92%;
+    width: 98%;
   }
   .home__component__right__top {
     display: grid;

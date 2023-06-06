@@ -34,6 +34,7 @@
   width: 85%;
   height: 100%;
   border: none;
+  padding-left: 10px;
   background-color: transparent;
   outline: none;
 }
@@ -83,4 +84,64 @@
 
 /* Responsivenes for Tablet */
 
+@media screen and (max-width: 768px) {
+  .log_out {
+    width: 15%;
+  }
 
+  .log_out button {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .navbar__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29.26px;
+  }
+  .left__side__navbar {
+    height: 100%;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+
+  .log_out {
+    width: 25%;
+    margin-top: -30px;
+    margin-right: -10px;
+  }
+
+  .log_out button {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+}
