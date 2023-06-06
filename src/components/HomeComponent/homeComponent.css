@@ -361,7 +361,7 @@
   height: 300px;
 }
 
-@media screen and (max-width: 1156px) {
+@media screen and (max-width: 768px) {
   .home__component__right {
     height: 100%;
     width: 95%;
@@ -402,9 +402,7 @@
     border: none;
     width: 32%;
   }
-}
 
-@media screen and (max-width: 768px) {
   .home__component__right__line-chart {
     height: auto;
     width: 680px;
@@ -412,12 +410,68 @@
     margin-top: 25px;
     border-radius: 20px;
   }
+
+  .home__component__right__pie-chart-schedule {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home__component__right__line-chart-schedule_pie-chart {
+    width: 100%;
+  }
+
+  .basic_tees .upper {
+    display: flex;
+    height: 20px;
+    width: 23%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upper span {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .custom_short_plants .upper1 {
+    display: flex;
+    height: 20px;
+    width: 37%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upper1 span {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .super_hoodies .upper2 {
+    display: flex;
+    height: 20px;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upper2 span {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .lower span {
+    display: inline-block;
+    margin-left: 26px;
+    font-size: 8px;
+    font-family: lato, sans-serif;
+    color: #858585;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .home__component__right {
     height: 100%;
-    width: 98%;
+    width: 100%;
   }
   .home__component__right__top {
     display: grid;
@@ -436,10 +490,11 @@
 
   .home__component__right__line-chart {
     height: auto;
-    width: 1000px;
+    width: 100%;
     background-color: #fff;
     margin-top: 25px;
     border-radius: 20px;
+    /* border: 1px solid red; */
   }
 
   .guest,
@@ -458,7 +513,7 @@
 
   .home__component__right__line-chart {
     height: auto;
-    width: 275px;
+    width: 375px;
     background-color: #fff;
     margin-top: 25px;
     border-radius: 20px;
@@ -568,6 +623,177 @@
     display: flex;
     height: 20px;
     width: 80%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upper2 span {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .lower span {
+    display: inline-block;
+    margin-left: 26px;
+    font-size: 8px;
+    font-family: lato, sans-serif;
+    color: #858585;
+  }
+
+  .home__component__right__line-chart-schedule_schedule {
+    width: 100%;
+    height: 256px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .home__component__right {
+    height: 100%;
+    width: 98%;
+  }
+  .home__component__right__top {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .sub__home__right__top_revenue,
+  .sub__home__right__top_transaction,
+  .sub__home__right__top_likes,
+  .sub__home__right__top_user {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .home__component__right__line-chart {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 25px;
+    border-radius: 20px;
+    /* border: 1px solid red; */
+  }
+
+  .guest,
+  .user {
+    width: 47%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home__component__right__line-chart-schedule_pie-chart_top select {
+    border: none;
+    width: 32%;
+  }
+
+  .home__component__right__line-chart {
+    height: auto;
+    width: 385px;
+    background-color: #fff;
+    margin-top: 25px;
+    border-radius: 20px;
+  }
+
+  .home__component__right__line-chart_top__div {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+
+  .home__component__right__line-chart_top__div .right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin-left: -80px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+  }
+  .home__component__right__line-chart_top__div .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .home__component__right__line-chart_top__div .left select {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-left: 25px;
+    width: 35%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .home__component__right__pie-chart-schedule {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home__component__right__line-chart-schedule_pie-chart {
+    width: 100%;
+  }
+
+  .home__component__right__line-chart-schedule_pie-chart_top {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left_pie {
+    width: 50%;
+    height: 60%;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .basic_tees {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .basic_tees .upper {
+    display: flex;
+    height: 20px;
+    width: 43%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upper span {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .custom_short_plants .upper1 {
+    display: flex;
+    height: 20px;
+    width: 67%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upper1 span {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .super_hoodies .upper2 {
+    display: flex;
+    height: 20px;
+    width: 56%;
     justify-content: space-between;
     align-items: center;
   }

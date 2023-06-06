@@ -14,11 +14,12 @@
   display: flex;
   justify-content: space-between;
   margin-top: -50px;
+  gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
   .home {
-    height: 235vh;
+    height: 285vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -28,7 +29,7 @@
   }
 
   .sub__home {
-    height: 225vh;
+    height: 265vh;
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -36,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 425px) {
   .home {
     height: 360vh;
     width: 100%;
@@ -49,9 +50,10 @@
 
   .sub__home {
     height: 345vh;
-    width: 95%;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     margin-top: -50px;
+    gap: 0px;
   }
 }

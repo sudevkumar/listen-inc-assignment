@@ -92,7 +92,6 @@ function HomeComponent({ handleClick, click, setClick }) {
 
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
 
-  const mobile = window.innerWidth <= 768 ? true : false;
 
   return (
     <div className="home__component__right">

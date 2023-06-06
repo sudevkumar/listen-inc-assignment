@@ -101,10 +101,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .navbar {
     margin-top: 15px;
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +129,7 @@
   }
 
   .log_out {
-    width: 25%;
+    width: 15%;
     margin-top: -30px;
     margin-right: -10px;
   }
