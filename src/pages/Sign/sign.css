@@ -3,7 +3,7 @@
 }
 
 .sign__left {
-  width: 588px;
+  width: 40%;
   height: 100vh;
   background-color: #000;
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .sign__right {
-  width: 940px;
+  width: 60%;
   height: 100vh;
   display: flex;
 
