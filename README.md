@@ -1,7 +1,7 @@
 
 # Dashboard UI
 
-This is a assignment given by Listed Inc.
+This is an assignment given by Listed Inc.
 
  
 ## Screenshots
